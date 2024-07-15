@@ -11,7 +11,10 @@ import SwiftUI
 struct QwirkleScoreApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            let players = Players(playerNames: [
+                "YCL", "Sherry", "Miru"
+            ])
+            QwirkleScoreV(players: players.showPlayers())
         }
     }
 }
